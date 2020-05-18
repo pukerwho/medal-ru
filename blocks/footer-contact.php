@@ -25,7 +25,7 @@ foreach ( $contact_pages as $contact_page ): ?>
     <?php $footer_emails = carbon_get_post_meta($contact_page, 'crb_contact_emails');
     foreach ($footer_emails as $footer_email): ?>
       <div>
-        <a href="mailto:<?php echo $footer_email['crb_contact_email'] ?>">info@s-cast.ua</a>
+        <a href="mailto:<?php echo $footer_email['crb_contact_email'] ?>">info@s-caste.ru</a>
       </div>
     <?php endforeach; ?>
   </div>

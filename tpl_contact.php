@@ -36,7 +36,7 @@ Template Name: КОНТАКТЫ
 						<div class="emails">
 							<?php $footer_emails = carbon_get_the_post_meta('crb_contact_emails');
 					    foreach ($footer_emails as $footer_email): ?>
-				        <a href="mailto:<?php echo $footer_email['crb_contact_email'] ?>" class="email">info@s-cast.ua</a>
+				        <a href="mailto:<?php echo $footer_email['crb_contact_email'] ?>" class="email">info@s-caste.ru</a>
 					    <?php endforeach; ?>
 						</div>  
 						<!-- Address -->
