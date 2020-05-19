@@ -9,7 +9,7 @@ Template Name: ГЛАВНАЯ
 <section id="hero">
 	<div class="hero">
 		<div class="slider">
-			<div class="swiper-container ">
+			<div class="swiper-container swiper-slider-container">
 				<div class="swiper-wrapper">
 					<?php $slider_items = carbon_get_the_post_meta('crb_hero_slide');
 					foreach ( $slider_items as $slider_item ): ?>
