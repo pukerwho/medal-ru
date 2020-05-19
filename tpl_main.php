@@ -21,7 +21,13 @@ Template Name: ГЛАВНАЯ
 										$slider_src_large = wp_get_attachment_image_src($slider_item['crb_hero_slide_img'], 'large'); 
 										$slider_src_full = wp_get_attachment_image_src($slider_item['crb_hero_slide_img'], 'full'); 
 									?>
-									<img src="<?php echo $slider_src_full[0] ?>" alt="" loading="lazy">
+									<img srcset="<?php echo $slider_src_medium[0] ?> 767w, 
+									<?php echo $slider_src_large[0] ?> 1280w,
+									<?php echo $slider_src_full[0] ?> 1440w"
+									sizes="(max-width: 767px) 767px,
+			            (max-width: 1280px) 1280px,
+			            1440px"
+									src="<?php echo $slider_src_full[0] ?>" alt="" loading="lazy">
 								</div>
 								<div class="container mx-auto px-4 lg:px-0">
 									<div class="slide_title large-font">
