@@ -59,7 +59,7 @@
                   <?php endforeach; ?>
                   <div class="phones_sub">
                     <?php
-                    foreach (array_slice($header_phones_sub, 1, 5) as $header_phone_sub): ?>
+                    foreach (array_slice($header_phones, 1, 5) as $header_phone_sub): ?>
                       <a href="tel:<?php echo $header_phone_sub['crb_contact_phone'] ?>">
                         <?php echo $header_phone_sub['crb_contact_phone'] ?>
                       </a>
