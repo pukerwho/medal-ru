@@ -51,13 +51,15 @@
             foreach ( $contact_pages as $contact_page ): ?>
               <div class="contacts flex">
                 <div class="phones">
-                  <?php $footer_vibers = carbon_get_post_meta($contact_page, 'crb_contact_vibers');
-                    foreach ($footer_vibers as $footer_viber): ?>
-                    <a href="tel:<?php echo $footer_viber['crb_contact_viber'] ?>"><?php echo $footer_viber['crb_contact_viber'] ?></a>
+                  <?php $header_phones = carbon_get_post_meta($contact_page, 'crb_contact_phones');
+                  foreach (array_slice($header_phones, 0,1) as $header_phone_top): ?>
+                    <a href="tel:<?php echo $header_phone_top['crb_contact_phone'] ?>">
+                      <?php echo $header_phone_top['crb_contact_phone'] ?>
+                    </a>
                   <?php endforeach; ?>
                   <div class="phones_sub">
-                    <?php $header_phones_sub = carbon_get_post_meta($contact_page, 'crb_contact_phones');
-                    foreach ($header_phones_sub as $header_phone_sub): ?>
+                    <?php
+                    foreach (array_slice($header_phones_sub, 1) as $header_phone_sub): ?>
                       <a href="tel:<?php echo $header_phone_sub['crb_contact_phone'] ?>">
                         <?php echo $header_phone_sub['crb_contact_phone'] ?>
                       </a>
